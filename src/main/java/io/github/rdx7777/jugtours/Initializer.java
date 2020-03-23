@@ -34,7 +34,5 @@ class Initializer implements CommandLineRunner {
             .build();
         djug.setEvents(Collections.singleton(event));
         repository.save(djug);
-
-        repository.findAll().forEach(System.out::println);
     }
 }
